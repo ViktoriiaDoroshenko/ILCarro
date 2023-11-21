@@ -9,6 +9,8 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
+import java.io.IOException;
+
 public class TestBase implements HelperUser, HelperCar {
     ChromeDriver wd;
 
@@ -18,7 +20,7 @@ public class TestBase implements HelperUser, HelperCar {
         wd.navigate().to("https://ilcarro.web.app/search");
         wd.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }*/
-    public void setup() {
+    public void setup() throws IOException {
         init();
     }
     @AfterSuite

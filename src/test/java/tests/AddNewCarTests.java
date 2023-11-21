@@ -25,7 +25,7 @@ public class AddNewCarTests extends TestBase{
                 .manufacture("KIA")
                 .model("Sportage")
                 .year("2020")
-                .fuel("'Petrol")
+                .fuel("Petrol")
                 .seats("5")
                 .carClass("B")
                 .carRegNumber("100-200-" +i)
